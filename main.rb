@@ -4,9 +4,13 @@ require 'sinatra/reloader' if development?
 require 'sass'
 
 get '/' do 
-erb :welcome
+erb :cipher
 end
 
-get '/styles.css' do 
+get ('/styles.css') do 
 scss :styles
+end
+
+get '/parse' do 
+	params[:unciphtext]
 end
