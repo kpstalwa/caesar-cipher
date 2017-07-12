@@ -9,14 +9,15 @@
 	<div class="header">
 		<h1>Try the Caesar Cipher!</h1>
 	</div>
-	<form method="GET" action="/parse">
-		<label for ="text">Unciphered Text:
-			<input type="text" name="unciphtext">
+	<form method="POST" action="/parse">
+		<label for ="text">Plaintext:
+			<input type="text" name="unciphtext" value="<%= @text %>">
 		</label>
 		<label for="shift"> Desired Shift:
-			<input type="number" name="shift">
+			<input type="number" name="shift" value="<%= @shift %>">
 		</label>
 		<input type="submit" value="encrypt!">
 	</form>
+	<p>Your cipher text is: <%=@ciphertext%></p>
 </body>
 </html>

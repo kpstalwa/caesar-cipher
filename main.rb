@@ -11,6 +11,9 @@ get ('/styles.css') do
 scss :styles
 end
 
-get '/parse' do 
-	params[:unciphtext]
+post '/parse' do
+@text = params[:unciphtext]
+@shift = params[:shift] 
+@ciphertext = caesar_cipher(@text, @shift)
+erb :cipher
 end
