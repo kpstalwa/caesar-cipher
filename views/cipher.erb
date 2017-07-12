@@ -4,20 +4,27 @@
 	<title>Caesar Cipher</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
 </head>
 <body>
 	<div class="header">
-		<h1>Try the Caesar Cipher!</h1>
+		<h1>The Caesar Cipher</h1>
 	</div>
-	<form method="POST" action="/parse">
-		<label for ="text">Plaintext:
-			<input type="text" name="unciphtext" value="<%= @text %>">
-		</label>
-		<label for="shift"> Desired Shift:
-			<input type="number" name="shift" value="<%= @shift %>">
-		</label>
-		<input type="submit" value="encrypt!">
-	</form>
-	<p>Your cipher text is: <%=@ciphertext%></p>
-</body>
-</html>
+	<div class=form>
+		<form method="POST" action="/parse">
+			<label for ="text">
+				<p>Plaintext:
+					<input type="text" name="unciphtext" value="<%= @text %>"> </p>
+				</label>
+				<label for="shift"> 
+					<p>Desired Shift:
+						<input type="number" name="shift" value="<%= @shift %>"></p>
+					</label>
+					<p>
+						<input type="submit" value="encrypt!"> </p>
+					</form>
+					<p>Your cipher text is:</p>
+					<p><%=@ciphertext%></p>
+				</div>
+			</body>
+			</html>
