@@ -1,7 +1,12 @@
 $hotpink: #c6538c;
 $main-font: 'Proza Libre', Helvetica,  sans-serif;
+$nebula: #E6E6FA;
+
 html{
 	font-family: $main-font;
+}
+body {
+	background-color: $nebula;
 }
 .header{
 	h1 {
@@ -10,6 +15,18 @@ html{
 		font-size: 45px;
 	}
 }
-input {
+form {
+	margin: auto;
+	width: 10%;
+}
+p {
+	font-size: 20px;
+
+}
+.output {
 	display: block;
+	margin: auto;
+	width: 50%;
+	color: indigo;
+
 }
