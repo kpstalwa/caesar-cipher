@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Caesar Cipher</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
-</head>
-<body>
-	<div class="header">
-		<h1>The Caesar Cipher</h1>
-	</div>
-	<div class=form>
-		<form method="POST" action="/parse">
-			<label for ="text">
-				<p>Plaintext:
-					<input type="text" name="unciphtext" value="<%= @text %>"> </p>
-				</label>
-				<label for="shift"> 
-					<p>Desired Shift:
-						<input type="number" name="shift" value="<%= @shift %>"></p>
-					</label>
-					<p>
-						<input type="submit" value="encrypt!"</p>
-					</form>
-					<div class="output">
-					<p>Your cipher text is:</p>
-					<p><%=@ciphertext%></p>
-					</div>
-				</div>
-			</body>
-			</html>
+   <head>
+      <title>Caesar Cipher</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="/styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+   </head>
+   <body>
+      <div class="header">
+         <h1>The Caesar Cipher</h1>
+      </div>
+      <div class=form>
+         <form method="POST" action="/parse">
+            <label for ="text">
+               <p>Plaintext:
+                  <input type="text" name="unciphtext" value="<%= @text %>"> 
+               </p>
+            </label>
+            <label for="shift">
+               <p>Desired Shift:
+                  <input type="number" name="shift" value="<%= @shift %>">
+               </p>
+            </label>
+            <p>
+               <input type="submit" value="encrypt!"
+            </p>
+         </form>
+         <div class="output">
+            <p>Your cipher text is:</p>
+            <p><%=@ciphertext%></p>
+         </div>
+      </div>
+   </body>
+</html>
